@@ -1,0 +1,23 @@
+{
+  "name": "hapi-redis-mongoose",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src",
+    "dev": "nodemon src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async-redis": "^1.1.7",
+    "boom": "^7.3.0",
+    "hapi": "^18.1.0",
+    "mongoose": "^5.5.5",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}

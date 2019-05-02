@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+  backend:
+    build: ./
+    volumes:
+      - ./:/app
+      - notused:/app/node_modules
+    ports:
+      - 8000:8000
+    environment:
+      WAIT_HOSTS: mongo:27017
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
+  mongo:
+    image: mongo
+    ports:
+      - 27011:27017
+
+volumes:
+  notused:
